@@ -225,4 +225,48 @@ details > summary:hover { color: var(--accent); }
   .gallery { grid-template-columns: 1fr; }
   .awards .date { float: none; display: block; margin: 0; }
 }
+/* ---------- laptop / desktop: larger, easier-to-read type ---------- */
+@media (min-width: 861px) {
+  :root { --sidebar: 264px; --content: 780px; }
+  body { font-size: 17px; }
+  .brand .name { font-size: 22px; }
+  .brand .name-ko { font-size: 14px; }
+  .nav a { font-size: 16px; }
+  .side-links { font-size: 14.5px; }
+  .hero { height: min(440px, 62vh); }
+  .hero h1 { font-size: clamp(38px, 4.4vw, 50px); }
+  .hero .role { font-size: 17px; }
+  .hero .fields { font-size: 15px; }
+  .page-head h1 { font-size: clamp(36px, 4vw, 44px); }
+  .page-head p { font-size: 16px; }
+  .block > h2 { font-size: 27px; }
+  .block h3 { font-size: 13.5px; }
+  .about { grid-template-columns: minmax(0, 1fr) 190px; }
+  .portrait { width: 190px; }
+  .rq li { grid-template-columns: 60px minmax(0, 1fr); }
+  .rq .num { font-size: 34px; }
+  .rq .q { font-size: 19.5px; }
+  .rq .more { font-size: 14px; }
+  .venue { font-size: 16px; }
+  .dl dd { font-size: 16px; }
+  .pill { font-size: 14.5px; height: 34px; padding: 0 14px; }
+  .legend { font-size: 13.5px; }
+  .paper .title { font-size: 19px; }
+  .paper .meta { font-size: 16px; }
+  .tag { font-size: 11.5px; }
+  .honor { font-size: 14.5px; }
+  .lpill, details > summary { font-size: 14px; height: 30px; padding: 0 12px; }
+  .abstract { font-size: 16px; }
+  .awards .org { font-size: 16px; }
+  .awards .paper-t { font-size: 17px; }
+  .awards .date { font-size: 14.5px; }
+  .gallery img { height: 250px; }
+  .gallery figcaption { font-size: 13.5px; }
+  .item { grid-template-columns: 240px minmax(0, 1fr); gap: 30px; }
+  .item h4 { font-size: 20.5px; }
+  .item .sub { font-size: 14.5px; }
+  .item ul, .item p { font-size: 16px; }
+  .foot { font-size: 14.5px; }
+  .foot blockquote { font-size: 18px; }
+}
 @media (prefers-reduced-motion: reduce) { .hero-text { animation: none; } }
