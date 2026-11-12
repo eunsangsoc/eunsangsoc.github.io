@@ -182,6 +182,7 @@ details > summary:hover { color: var(--accent); }
 .item.noimg { grid-template-columns: 1fr; }
 .item .pic { display: flex; flex-direction: column; gap: 8px; }
 .item .pic img { width: 100%; height: auto; max-height: 300px; object-fit: cover; border-radius: var(--radius); }
+.item .pic img.full { max-height: none; }
 .item .pic img.logo { object-fit: contain; background: #fff; padding: 18px; }
 .item h4 { font: 500 18px/1.35 var(--serif); margin: 0 0 2px; }
 .item .sub { font-size: 13px; color: var(--ink-3); margin: 0 0 10px; }
