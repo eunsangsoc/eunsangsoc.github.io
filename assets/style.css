@@ -44,7 +44,7 @@ img { max-width: 100%; display: block; }
 }
 .brand { text-decoration: none; }
 .brand .name { font: 600 19px/1.25 var(--serif); }
-.brand .name-ko { font-size: 13px; color: var(--ink-3); margin-top: 2px; }
+.brand .name-ko { font: 400 12.5px/1.4 "Noto Serif KR", var(--serif); color: var(--ink-3); margin-top: 3px; letter-spacing: 0.04em; }
 .nav { display: flex; flex-direction: column; gap: 2px; }
 .nav a {
   text-decoration: none; color: var(--ink-2); font-size: 14px;
@@ -69,7 +69,7 @@ img { max-width: 100%; display: block; }
 .hero-text { position: relative; width: 100%; pointer-events: none; animation: rise 900ms cubic-bezier(.2,.7,.2,1) both 150ms; }
 .hero-text a { pointer-events: auto; }
 .hero h1 { font: 400 clamp(32px, 4vw, 42px)/1.1 var(--serif); margin: 0 0 8px; letter-spacing: -0.015em; }
-.hero h1 .ko { color: var(--ink-3); }
+.hero .ko-mobile { display: none; font: 400 14px/1.4 "Noto Serif KR", var(--serif); color: var(--ink-3); letter-spacing: 0.04em; margin: -4px 0 10px; }
 .hero .role { font-size: 15px; margin: 0 0 4px; color: var(--ink-2); }
 .hero .fields { font-size: 13px; color: var(--ink-3); margin: 0; }
 
@@ -210,6 +210,7 @@ details > summary:hover { color: var(--accent); }
   html { scroll-padding-top: 60px; }
   .main { padding: 0 20px 60px; }
   .hero { height: 300px; padding-bottom: 28px; }
+  .hero .ko-mobile { display: block; }
   .stream { inset: 0 -20px; width: calc(100% + 40px); }
 
   .page-head { padding-top: 36px; }
